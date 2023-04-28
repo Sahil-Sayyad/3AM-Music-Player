@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background-color:black;
+    font-family: 'Ubuntu', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-syle css */
+.font-style{
+    font-size: 1.0rem;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif; 
+}
+/** Navigation Bar Section Starts Here  **/
+.navigationBar{
+    height: 10%;
+	width: auto;
+    color:white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+    padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; 
+}
+.navigationBar > div{
+    display: inline-block;
+ }
+
+ /* logo and name */
+ .logo{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.logo img{
+    height: inherit;
+    border-radius: 80%;
+}
+.logo-and-name > div{
+     cursor: pointer;
+     vertical-align: middle;
+     display: inline-block;
+}
+
+/* feedback button */
+.feedback-button{
+    float: right;
+    margin-left: 35%;
+}
+.feedback-button button{
+    font-size: 1.0rem;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: black;
+    color:white;
+    color: darkgrey;
+}
+.feedback-button button:hover{
+    color: white;
+}
+/* Search Bar **/
+.search-container {
+    float: left;
+    margin-right: 10px;
+  }
+  input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px 30px 30px 0px;
+  }
+  .search-container button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    color: darkgrey;
+    background: black;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 30px 0px 0px 30px;
+  }
+ 
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+     input[type=text], .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    input[type=text] {
+      border: 1px solid #ccc; 
+    }
+  }
+/* Mic Button**/
+.mic i{
+    color:darkgrey;
+    cursor: pointer;
+    margin: 15px;
+}
+.mic i:hover{
+    color:white;  
+}
+/* Account Info **/
+.profile img {
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    border-radius: 80%;
+}
+/* DropDown List **/
+nav li{
+    list-style-type: none;
+}
+nav li select {
+    font-size: 1.0rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 8px;
+    background-color: black;
+    color: darkgrey;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+nav li select:hover {
+color: white;
+}
+nav li select option{
+    color: white;
+    font-size: 1.0rem;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+/** Navigation Bar Section Ends Here  **/
+
+/** main content Start Here */
+.container{
+    color: white;
+    min-height: 70vh;
+}
+/** SideBar Section Start Here **/
+aside{
+    color: grey;
+    width: 15%;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+}
+.list{
+    margin: 37px;
+}
+small{
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 40px;
+}
+aside ul li{
+    font-size: 1.0rem;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    list-style-type: none;
+    margin: 10px;
+}
+aside ul li a{
+    color: darkgrey;
+    text-decoration: none;
+}
+aside ul li a:hover{
+    color: white;
+}
+/** SideBar Section Ends Here**/
+
+/** For You section Start Here **/
+.Browse{
+    font-size: 1.7rem;
+    margin-bottom:1%;
+}
+.For-You h2{
+    margin-bottom:20px;
+}
+.for-you-playlists{
+    display: grid;
+    grid: repeat(1, 80px) / auto-flow 200px;
+}
+.for-you-playlists > div{
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    padding-top:20px;
+    width: 140px;
+    height: 80px;
+}
+.for-you-playlists div b{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+.for-you-playlists div b:hover,#for-you-playlists div b:focus,#for-you-playlists div b:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+.for-you-playlists .Indian-Pop{
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.for-you-playlists .Indian-Pop a{
+    color: white;
+    text-decoration: none;
+}
+.for-you-playlists .chill{
+    background: linear-gradient(#088395,#9198e5);
+}
+.for-you-playlists .Marathi-hits{
+    background-color: #6C9BCF;
+}
+.for-you-playlists .Electronic{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.for-you-playlists .Good-vibes{
+    background: linear-gradient(to right, #f857a6, #ff5858);
+}
+.for-you-playlists .desi{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+/** For You section Ends Here **/
+
+/** Genre playlists section Start Here**/
+.Genre h2{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#Genre-playlists{
+    display: grid;
+    grid: repeat(2, 100px) / auto-flow 200px;
+}
+#Genre-playlists > div{
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    width: 140px;
+    height: 80px;
+}
+#Genre-playlists div b{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+#Genre-playlists div b:hover,#Genre-playlists div b:focus,#Genre-playlists div b:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+#Genre-playlists .Indian-Pop{
+    padding-top:20px;
+    background: linear-gradient(to right, #8360c3, #2ebf91 );
+}
+#Genre-playlists .Punjabi{
+    padding-top:20px;
+    background: linear-gradient(#088395,#9198e5);
+}
+#Genre-playlists .Marathi-hits{
+    padding-top:20px;
+    background-color: #6C9BCF;
+}
+#Genre-playlists .Electronic{
+    padding-top:20px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+#Genre-playlists .Good-vibes{
+    padding-top:20px;
+    background: linear-gradient(to right, #f857a6, #ff5858);
+}
+#Genre-playlists .desi{
+    padding-top:20px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+#Genre-playlists .I-I{
+    padding-top:20px;
+    background: linear-gradient(to right, #3d7eaa, #ffe47a);
+}
+#Genre-playlists .Pop{
+    padding-top:20px;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+#Genre-playlists .Rock{
+    padding-top:20px;
+    background: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+#Genre-playlists .Punjabi{
+    padding-top:20px;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+#Genre-playlists .Hip-Pop{
+    padding-top:20px;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+#Genre-playlists .Bollywood{
+    padding-top:20px;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+}
+#Genre-playlists .R-B{
+    padding-top:20px;
+    background: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );    
+}
+/** music player bottom line */
+.Music-Player{
+    background: linear-gradient(to right, #1e130c, #9a8478);
+    position:fixed;
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 98px;
+}
+.Music-Player > div{
+    display: inline-block;
+}
+.song-image{
+    margin-left: 25px;
+    margin: 8px;
+    margin-top: -35px;
+}
+.song-image img{
+    height: 80px;
+    border-radius: 10px;
+}
+.song-name{
+    color:white;
+    text-align: justify;
+}
+.song-name p{
+    font-size: 10px;
+}
+.icons{
+    color:white;
+}
+.icons > div{
+    display: inline-block;
+}
+
+.icons i{
+    cursor: pointer;
+}
+.heart{
+    margin: 20px;
+}
+.heart i:hover{
+    color:red;
+}
+.dot{
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.buttons{
+    margin-left: 310px;
+    text-align: center;
+}
+.buttons > div{
+    display:inline-block;
+    margin-left: 30px;
+}
+.play{
+    margin: 5px;
+    margin-left: 320px;
+}
+.play i{
+    margin: 15px;
+    margin-bottom: 0px;
+}
+#progress {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 5px;
+    width: 100%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  #progress::-webkit-slider-thumb {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #434343;
+  }
+
+
+ 
