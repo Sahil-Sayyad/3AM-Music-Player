@@ -212,7 +212,7 @@ aside ul li a:hover{
     font-family: 'Ubuntu', sans-serif;
 }
 .playlist-img{
-    background-image: url(Media/Playlist-Img.avif);
+    background-image: url(Playlist-Img.avif);
     background-size: cover;
     background-position: center;
 }
