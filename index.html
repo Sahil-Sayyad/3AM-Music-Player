@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3AM Studio</title>
+    <!--* adding favicon icon *-->
+    <link rel="icon" href="Media/favicon.ico">
+    <!--* adding font Awesome for icons and logos *-->
+    <script
+      src="https://kit.fontawesome.com/1d9a93a71b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--* adding css  *-->
+    <link rel="stylesheet" href="Media/style.css" />
+    </head>
+    <body>
+    <!--* header section begins *-->
+    <header>
+      <!--* navbar section begins *-->
+      <nav class="navigationBar">
+        <div class="logo-and-name">
+          <div class="logo">
+            <!--* logo of Music player *-->
+            <img
+              src="media/music-player-logo.png"
+              alt="music-player-logo.png"
+            />
+          </div>
+          <!--* logo name  *-->
+          <div class="webName">
+            <h3>3AM Studio</h3>
+          </div>
+        </div>
+              <!--* feedback button *-->
+        <div class="feedback-button">
+          <button><i class="fa-thin fa-pen-line fa-xl"></i>Feedback</button>
+        </div>
+
+        <!--* search bar *-->
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <!--* mic button *-->
+        <div class="mic">
+          <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+        <!--* account logo *-->
+        <div class="profile">
+          <img src="Media/profile-img.png" alt="profile-img" />
+        </div>
+        <!--* dropdown buttons *-->
+        <li>
+          <select name="dropdown" id="dropdown">
+            <option value="My Profile">Menu</option>
+            <option value="My Profile">My Profile</option>
+            <option value="Messeges">Messeges</option>
+            <option value="Settings">Settings</option>
+            <option value="About">About</option>
+            <option value="Log out ">Log out</option>
+          </select>
+        </li>
+      </nav>
+      <!--* navbar section ends here  *-->
+    </header>
+    <!--* header section ends here *-->
+    <!--* Main section  *-->
+    <main>
+    <div class="container">
+    <!--* SideBar Section Start Here *-->
+      <aside>
+                <div class="list">
+                  <ul>
+                    <li><a href="">Browse</a></li>
+                    <li><a href="">For You </a></li>
+                    <li><a href="">Your FM </a></li>
+                    <li><a href="">Charts </a></li>
+                  </ul>
+                </div>
+                <small>My Library</small>
+                <div class="list">
+                  <ul>
+                    <li><a href="">Favorites</a></li>
+                    <li><a href="">Albums </a></li>
+                    <li><a href="">Artists </a></li>
+                    <li><a href="">History </a></li>
+                    <li><a href="">Notification </a></li>
+                    <li><a href="">Download </a></li>
+                  </ul>
+                </div>
+     </aside>
+    <!--* SideBar Section ends here *-->
+
+    <div class="Browse">
+      <h1>Browse</h1>
+    </div>
+    <!--* For You section Categories  *-->
+    <section class="For-You">
+        <h2>For You</h2>
+        <div class="for-you-playlists">
+        <div class="Indian-Pop">
+            <a href="Playlist_Page.html"><b>Indian Pop</b></a>
+        </div>
+        <div class="chill">
+            <b>Chill</b>
+        </div>
+        <div class="Marathi-hits">
+            <b>Marathi Hits</b>
+        </div>
+        <div class="Electronic">
+            <b>Electronic</b>
+        </div>
+        <div class="Good-vibes">
+            <b>Good Vibes</b>
+        </div>
+        <div class="desi">
+          <b>Desi Hip-Hop</b>
+        </div>
+      </div>
+    </section>
+    <!--* For You section Categories Ends Here  *-->
+
+    <!--* Gnere Playlist Categories section Starts here *-->
+    <section class="Genre">
+        <h2>Genre</h2>
+        <div id="Genre-playlists">
+          <div class="Indian-Pop">
+            <b>Indian Pop</b>
+        </div>
+        <div class="Punjabi">
+            <b>Punjabi</b>
+        </div>
+        <div class="I-I">
+            <b>Indian Indie</b>
+        </div>
+        <div class="Electronic">
+            <b>Electronic</b>
+        </div>
+        <div class="Pop">
+            <b>Pop</b>
+        </div>
+        <div class="Hip-Pop">
+            <b>Hip-Hop</b>
+        </div>
+        <div class="Rock">
+            <b>Rock</b>
+        </div>
+        <div class="R-B">
+            <b>R & B</b>
+        </div>
+        <div class="Marathi-hits">
+            <b>Marathi Hits</b>
+        </div>
+        <div class="Bollywood">
+            <b>Bollywood</b>
+        </div>
+        <div class="Good-vibes">
+          <b>Good Vibes</b>
+        </div>
+        <div class="desi">
+            <b>Desi Hip-Hop</b>
+        </div>
+      </div>
+    </section>
+      <!--* Gnere Playlist Categories section Ends here *-->
+    </div>
+    </main>
+    <!--* Main section Ends Here *-->
+    <!--*Footer Section Starts Here --> 
+    <footer class="Music-Player">
+      <!--* Player section Starts Here *-->
+      <!-- <div class="bottom"> -->
+        <div class="song-image">
+          <img src="media/song-image.webp" alt="song-image" />
+        </div>
+        <div class="song-name">
+          <b>Manjha</b>
+          <p>Vishal Sharma</p>
+        </div>
+        <div class="icons">
+          <!--** fontawesome icons *-->
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="dot">
+            ...
+          </div>
+          <div class="buttons">
+            <div class="shuffle">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="backward">
+              <i class="fa-solid fa-2x fa-backward-step"></i>
+            </div>
+            <div class="play-button">
+              <i class="fa-solid fa-2x fa-play"></i>
+            </div>
+            <div class="forword">
+              <i class="fa-solid fa-2x fa-forward-step"></i>
+            </div>
+            <div class="repeat">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+          <div class="play"> 
+            <i> 02:22 / 04:49</i>
+            <i class="fa-solid fa-volume-high"></i> 
+          </div>
+        </div> 
+        <input type="range" name="range" id="progress" min="0" max="100" />
+         <!--* Player Section Ends Here *-->
+    </footer>
+    <!--*Footer Section Ends Here --> 
+    </body>
+</html>
