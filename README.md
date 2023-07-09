@@ -1,8 +1,9 @@
 # Ninja Studio App using HTML CSS
 
+   <b> 
     This is a repository for Ninja Studio App  Developed using  HTML, CSS.
     It is developed to create a soothing Experience with powerful features and clean interface.
-
+    </b>
 
 # PRODUCT DEMO
 
