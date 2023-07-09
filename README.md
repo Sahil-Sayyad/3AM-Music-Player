@@ -19,7 +19,7 @@
 
 # LINKS
 
-<a href = "https://superherohunterapp.netlify.app/"> <b>LIVE PRODUCT</b> </a>  &nbsp; <a href = "https://github.com/Sahil-Sayyad/Ninja_Studio"> <b>CODE</b> </a> <br>
+<a href = "https://sahil-sayyad.github.io/Ninja_Studio/"> <b>LIVE PRODUCT</b> </a>  &nbsp; <a href = "https://github.com/Sahil-Sayyad/Ninja_Studio"> <b>CODE</b> </a> <br>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 <br>
